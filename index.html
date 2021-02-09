@@ -1,15 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?family=Pangolin&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
-    <script src="https://kit.fontawesome.com/edea2c4fd3.js" crossorigin="anonymous"></script>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Pangolin&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script src="https://kit.fontawesome.com/edea2c4fd3.js" crossorigin="anonymous"></script>
 </head>
+
 <body>
   <div id="hidden-container">
     <button id="new-game">Új játék</button>
@@ -22,20 +24,22 @@
       <div class="hiddenscore"></div>
     </div>
     <div class="message-container">Sok sikert!</div>
-    <div class="icon-container">
-      <!-- <h2>Te:</h2> -->
-      <span id="your-side">
-        <img src="./src/unknown_white.png" class="oppImg">
-      </span>
-      <!-- <h2>Gép:</h2> -->
-      <span id="opponent-side">
-        <img src="./src/unknown_white.png" class="oppImg">
-      </span>
-    </div>
+      <div class="name-container">
+        <h2>Te:</h2> 
+        <span id="your-side">
+          <img src="./src/unknown_white.png" class="oppImg">
+        </span>
+      </div>
+      <div class="name-container2">
+        <h2>Gép:</h2> 
+        <span id="opponent-side">
+          <img src="./src/unknown_white.png" class="oppImg">
+        </span>
+      </div>
     <div id="play-side">
-      <img src="./src/rock_white.png" class="btn" id="ko">
-      <img src="./src/paper_white.png" class="btn" id="papir">
-      <img src="./src/scissor_white.png" class="btn" id="ollo">
+      <img src="./src/rock_white.png" class="btn" id="rock">
+      <img src="./src/paper_white.png" class="btn" id="paper">
+      <img src="./src/scissor_white.png" class="btn" id="scissor">
     </div>
     <div class="hidden-btn">
       <button id="hidbtn">Restart</button>
@@ -43,4 +47,5 @@
   </div>
 </body>
 <script src="./main.js"></script>
+
 </html>
