@@ -1,0 +1,196 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+#hidden-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 150px;
+}
+
+#new-game, #hidbtn  {
+  font-family : inherit;
+  font-size: 20px;
+  height: 60px;
+  width: 150px;
+  border-radius: 8px;
+  border: none;
+  color: hsl(196, 84%, 49%);
+  cursor: pointer;
+}
+
+
+
+
+#new-game:hover, #hidbtn:hover {
+  color: white;
+  background-color: hsl(196, 84%, 49%);
+  border: 3px solid white;
+  transform: scale(1.1);
+  transition: transform .5s ease-in-out;
+}
+
+body {
+  font-family: 'Pangolin', cursive;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  color: white;
+  background-color: hsl(196, 84%, 49%);
+}
+
+#container {
+  margin-top: 25px;
+    display: none;
+    padding: 5px;
+    width: 90%;
+    text-align: center;
+  }
+  
+  #opponent-side {
+    display: inline-block;
+    width: 150px;
+    height: 150px;
+    margin-left: 15px;
+    border-radius: 8px;
+
+
+    margin-bottom: 10px;
+    background-color: rgb(141, 10, 10);
+  }
+
+
+
+  #your-side {
+    display: inline-block;
+    width: 150px;
+    height: 150px;
+    margin-right: 15px;   
+
+    border-radius: 8px;
+    margin-bottom: 10px;
+    background-color: rgb(52, 99, 228);
+  }
+
+  #score{
+    padding: 15px;
+    margin-bottom: 10px;
+  }
+  
+  #play-side {
+    padding: 5px;
+    transition: display 3s ease-out;
+  }
+
+  .hidden-btn {
+    display: none;
+    transition: 3s ease-in;
+  }
+
+  .btn {
+    cursor: pointer;
+    display: inline-block;
+    height: 80px;
+    border-radius: 10px;
+    border: 3px solid white;
+    margin-right: 10px;
+    margin-left: 10px;
+    background-color: hsl(196, 84%, 49%);
+  }
+
+  .btn:hover {
+    background-color: rgb(52, 99, 228);
+    transform: scale(1.1);
+    transition: 0.5s ease;
+    border: 3px solid rgba(255, 255, 255, 0.623)
+  }
+
+  .oppImg {
+    object-fit: cover;
+    width: 100%;
+  }
+
+  img {
+    padding: 15px;
+  }
+
+
+
+  .you2 {
+    color:  rgb(52, 99, 228);
+    font-size: 30px;
+  }
+
+  .bot2 {
+    color: rgb(141, 10, 10);
+    font-size: 30px;
+  }
+
+
+
+  .message-container {
+    height: 100%;
+    width: 250px;
+    margin: auto;
+    margin-bottom: 20px;
+    background-color: rgb(31, 45, 71);
+    padding: 5px;
+    font-size: 24px;
+  }
+
+  @media only screen and (max-width: 382px) {
+    #your-side, #opponent-side {
+      margin: auto;
+      display: block;
+      margin-bottom: 15px;
+    }
+  }
+
+  .win {
+    border: 3px solid white;
+    animation: crescendo .5s alternate ease-in-out;
+  }
+
+  .win2 {
+    border: 3px solid white;
+    animation: crescendo .5s alternate ease-in-out;
+  }
+
+  @keyframes crescendo {
+    0%   {transform: scale(1);}
+    100% {transform: scale(1.1);}
+  }
+
+  .golden-win {
+    font-size: 26px;
+    color: goldenrod;
+  }
+
+  .lost {
+    font-size: 26px;
+    color: black;
+  }
+
+  .end-img {
+    object-fit: cover;
+    width: 100%;
+  }
+
+  .end-win {
+    animation: inf .5s infinite alternate ease-in-out;
+  }
+
+  @keyframes inf {
+    0%   {transform: scale(.9);}
+    100% {transform: scale(1.1);}
+  }
+
+  .icon-container {
+    height: 100%;
+    margin-bottom: 25px;
+  }
+  
